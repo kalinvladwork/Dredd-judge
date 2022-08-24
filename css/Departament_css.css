@@ -1,0 +1,430 @@
+@import "bootstrap.css";
+@import "Notestyle.css";
+
+body {
+    min-width: 1100px;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+.wraper {
+    width: 100%;
+}
+.back {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    opacity: 0.2;
+    background-image: url("../images/backgroundJudge.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom;
+    z-index: -2;
+}
+.clear  {
+    clear: left;
+}
+/* login style */
+.login_wraper_form {
+    height: 400px;
+    width: 300px;
+    margin: 50px auto;
+}
+.login_wraper_form img {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.login_wraper_form  form {
+    text-align: center;
+}
+/* end login style */
+
+
+
+/*header*/
+header {
+    height: 120px;
+    width: 100%;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#666666;
+    background-size:16px 16px;
+    position: relative;
+}
+div.logo {
+    height: 120px;
+    width: 700px;
+    padding-top: 5px;
+    margin-left: 20px;
+    position: relative;
+}
+.logoImg {
+    height: 140px;
+    width: 100px;
+    position: absolute;
+    background-image: url("../images/departmentLogo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.logoText {
+    height: 120px;
+    width: 600px;
+    position: absolute;
+    background-image: url("../images/cooltext1020847061.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 100px;
+}
+.codeOfLaws {
+    height: 115px;
+    width:  80px;
+    position: absolute;
+    right: 260px;
+    top: 0;
+    margin-top: 5px;
+    background-image: url("../images/book-of-law.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.codeOfLaws a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+}
+.calendar {
+    height: 120px;
+    width: 240px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #666666; /* Old browsers */
+    background: -moz-linear-gradient(top,  #666666 0%, #282828 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666666), color-stop(100%,#282828)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #666666 0%,#282828 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #666666 0%,#282828 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #666666 0%,#282828 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #666666 0%,#282828 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#282828',GradientType=0 ); /* IE6-9 */
+}
+.calendar > p{
+    height: 20px;
+    width: 200px;
+    text-align: center;
+    color: #cccccc;
+    font-size: 20px;
+    margin: 5px 20px 5px 20px;
+}
+.calendar table.table_calendar {
+    height: auto;
+    width: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 10px auto 10px 5px;
+    background: #cccccc;
+}
+.calendar table.table_calendar td {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    vertical-align:middle;
+}
+.calendar table.table_calendar td.activeTd {
+    background: #272727;
+    color: #D0D0D0;
+}
+.gameTime {
+    height: 30px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 5px;
+    color: #cccccc;
+    font-size: 30px;
+    text-align: center;
+}
+/* end header*/
+
+/* content */
+.content {
+    height: auto;
+    width:  100%;
+    float: left;
+}
+/*sidebar left*/
+aside.database {
+    height: 420px;
+    width:  200px;
+    margin: 20px 20px 0 20px;
+    float: left;
+}
+aside.database ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: #cccccc;
+}
+aside.database ul li {
+    height: 40px;
+    width:  200px;
+    margin: 5px 0 10px 0;
+    padding-top: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    background: #b5b5b5; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #b5b5b5 0%, #161616 15%, #000000 30%, #000000 50%, #000000 70%, #161616 85%, #b5b5b5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#b5b5b5), color-stop(15%,#161616), color-stop(30%,#000000), color-stop(50%,#000000), color-stop(70%,#000000), color-stop(85%,#161616), color-stop(100%,#b5b5b5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #b5b5b5 0%,#161616 15%,#000000 30%,#000000 50%,#000000 70%,#161616 85%,#b5b5b5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #b5b5b5 0%,#161616 15%,#000000 30%,#000000 50%,#000000 70%,#161616 85%,#b5b5b5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #b5b5b5 0%,#161616 15%,#000000 30%,#000000 50%,#000000 70%,#161616 85%,#b5b5b5 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #b5b5b5 0%,#161616 15%,#000000 30%,#000000 50%,#000000 70%,#161616 85%,#b5b5b5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5b5b5', endColorstr='#b5b5b5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+}
+aside.database > ul li:hover{
+    opacity: 1;
+}
+aside.database ul li a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+
+}
+/*end sidebar left*/
+
+
+
+/*  news*/
+.news {
+    height: auto;
+    margin: 25px 20px 0 240px;
+}
+.news_add {
+    height: auto;
+
+}
+#news_add_button {
+    height: 30px;
+    width:  150px;
+    margin: 5px 0 10px 0;
+    padding-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0.5;
+    background: #b5b5b5; /* Old browsers */
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+    display: block;
+}
+#news_add_button:hover {
+    background: #000000;
+    color: #b5b5b5;
+    opacity: 1;
+}
+.news article{
+    opacity: 1;
+    color: #cccccc;
+}
+.news article section {
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    padding: 20px;
+    background: rgb(0,0,0); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(10,10,10,1) 37%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(37%,rgba(10,10,10,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(10,10,10,1) 37%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(10,10,10,1) 37%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(10,10,10,1) 37%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(10,10,10,1) 37%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.news article section h5 span{
+    font-style: italic;
+    font-size: 13px;
+}
+/* end news*/
+/* end content */
+
+
+/* __________________modal */
+
+
+#Modal_offender, #Modal_codeOfLaws, #Modal_judje, #Modal_population, #Modal_population_add, #Modal_institutions, #Modal_taxes, #Modal_archive {
+    display: none;
+}
+.modal-body input {
+
+}
+.modal-footer a {
+    display: inline-block;
+    *display: inline;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    *margin-left: .3em;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    *background-color: #e6e6e6;
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+    *border: 0;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    *zoom: 1;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.modal-footer a:hover {
+    text-decoration: none;
+}
+
+/* modal  codeOfLaws*/
+.modal_codeOfLaws {
+    color: #cccccc;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 1050;
+    width: 900px;
+    margin-left: -450px;
+    background-color: transparent ;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    *border: 1px solid #999;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    outline: none;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+
+}
+.modal-body_codeOfLaws {
+    width: 900px;
+    height: 500px;
+    position: relative;
+    padding: 5px;
+    max-height: none;
+    overflow: visible;
+}
+.modal-footer_codeOfLaws {
+    padding: 14px 15px 15px;
+    margin-bottom: 0;
+    text-align: right;
+    background-color: #666666;
+    border-top: 1px solid #000;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    *zoom: 1;
+    -webkit-box-shadow: inset 0 1px 0 ##333;
+    -moz-box-shadow: inset 0 1px 0 ##333;
+    box-shadow: inset 0 1px 0 ##333;
+    opacity: 0;
+}
+.modal-footer .btn + .btn {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.modal-footer .btn-group .btn + .btn {
+    margin-left: -1px;
+}
+
+.modal-footer .btn-block + .btn-block {
+    margin-left: 0;
+}
+.btn_codeOfLaws {
+    opacity: 1;
+    position: absolute;
+    right: 30px;
+}
+
+
+/* modal  common*/
+
+.common_modal .modal-body {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.common_modal .modal-body table thead tr {
+
+}
+.common_modal .modal-body table thead th {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+}
+.common_modal .modal-body table tbody td {
+    font-size: 12px;
+}
+.common_modal .modal-body table tbody td .tab_photo {
+    width: 100px;
+    padding: 0;
+}
+.tab_photo {
+    width: 116px;
+}
+.tab_name {
+    width: 100px;
+}
+.tab_date {
+    width: 80px;
+}
+
+
+
+/* modal  offender*/
+
